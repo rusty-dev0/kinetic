@@ -416,13 +416,17 @@
         "uuid": "761eecd5-cc9b-4512-b74d-b293fa8ee57d"
       }
     ],
-    "used_designators": "SW1,C13-17,U2-3,R1-7,J1-4,Y1,#PWR7-25",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
       "761eecd5-cc9b-4512-b74d-b293fa8ee57d",
       "Root"
+    ],
+    [
+      "516e0ff6-2ca1-4482-bb23-5e8abf72d778",
+      "Motor and Power"
     ]
   ],
   "text_variables": {},
