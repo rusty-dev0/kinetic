@@ -3694,7 +3694,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:NCP1117-3.3_SOT223"
+		(symbol "Regulator_Linear:MCP1700x-330xxTT"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3710,7 +3713,7 @@
 					)
 				)
 			)
-			(property "Value" "NCP1117-3.3_SOT223"
+			(property "Value" "MCP1700x-330xxTT"
 				(at 0 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3721,8 +3724,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 0 5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3732,18 +3735,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
-				(at 2.54 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3754,7 +3746,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "REGULATOR LDO 3.3V"
+			(property "Description" "250mA Low Quiscent Current LDO, 3.3V output, SOT-23"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3765,7 +3757,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
+			(property "ki_keywords" "regulator linear ldo"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3776,10 +3768,21 @@
 					)
 				)
 			)
-			(symbol "NCP1117-3.3_SOT223_0_1"
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MCP1700x-330xxTT_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3789,7 +3792,7 @@
 					)
 				)
 			)
-			(symbol "NCP1117-3.3_SOT223_1_1"
+			(symbol "MCP1700x-330xxTT_1_1"
 				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -4721,6 +4724,12 @@
 		(uuid "58cd4f7f-fa85-46d9-a67e-9d06f1b0dfe2")
 	)
 	(junction
+		(at 83.82 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67976b7d-7402-401c-ab4a-470c1bfdc969")
+	)
+	(junction
 		(at 73.66 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4775,22 +4784,16 @@
 		(uuid "aba851df-7c75-4522-b233-88d4bde56cb1")
 	)
 	(junction
-		(at 63.5 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "abbac66b-f068-4677-bb81-117cc7e38963")
-	)
-	(junction
 		(at 152.4 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac401d9b-aa83-4199-ac9b-b38cd7a36bc5")
 	)
 	(junction
-		(at 83.82 31.75)
+		(at 63.5 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b467907b-347d-48a0-a5c0-3797daa1bc0e")
+		(uuid "c87fe8d6-59c1-4774-8d78-be871e28b413")
 	)
 	(junction
 		(at 73.66 139.7)
@@ -9197,7 +9200,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 104.14 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9278,7 +9281,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 111.76 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9359,7 +9362,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 119.38 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9518,7 +9521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 137.16 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9589,7 +9592,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "W25Q128JVS"
+		(property "Value" "W25Q16JVZPIQ TR"
 			(at 266.7 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9600,7 +9603,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
+		(property "Footprint" "Package_SON:Winbond_USON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm"
 			(at 255.27 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -9777,7 +9780,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 175.26 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -10127,7 +10130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 182.88 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -10197,7 +10200,7 @@
 				)
 			)
 		)
-		(property "Value" "15pF"
+		(property "Value" "33pF"
 			(at 222.2563 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10207,7 +10210,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 222.25 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -10256,89 +10259,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:NCP1117-3.3_SOT223")
-		(at 73.66 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a151dea-db06-4118-8462-01db280e771d")
-		(property "Reference" "U2"
-			(at 73.66 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NCP1117-3.3_SOT223"
-			(at 73.66 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 73.66 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
-			(at 76.2 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
-			(at 73.66 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "50c8e460-3fcb-45f4-94a2-587a67f30d7f")
-		)
-		(pin "2"
-			(uuid "afa61709-d4d3-4245-a71a-949d1c8f7628")
-		)
-		(pin "3"
-			(uuid "ca7d0499-89d2-44a5-88ab-aacb3ceabcc7")
-		)
-		(instances
-			(project "devboard"
-				(path "/761eecd5-cc9b-4512-b74d-b293fa8ee57d"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 63.5 38.1 0)
 		(unit 1)
@@ -10371,7 +10291,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 63.5 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -10530,7 +10450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 160.02 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -10611,7 +10531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 129.54 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -10770,7 +10690,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 83.82 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -11006,7 +10926,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 74.93 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11107,7 +11027,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 114.3 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -11188,7 +11108,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 152.4 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -11348,7 +11268,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical"
 			(at 64.77 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -11793,7 +11713,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 226.06 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -12029,7 +11949,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 190.5 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -12078,6 +11998,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:MCP1700x-330xxTT")
+		(at 73.66 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acfc3e83-b84b-4c90-9ee4-bc0a17a83bc7")
+		(property "Reference" "U6"
+			(at 73.66 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP1700x-330xxTT"
+			(at 73.66 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 73.66 26.035 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf"
+			(at 73.66 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "250mA Low Quiscent Current LDO, 3.3V output, SOT-23"
+			(at 73.66 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "82aaef9a-c9bc-46cb-9ae5-76e7c5eef32d")
+		)
+		(pin "3"
+			(uuid "6b6ccd9b-87e3-4092-9399-ae4df89a006d")
+		)
+		(pin "1"
+			(uuid "b0ca3b34-de11-4163-aee7-0c61cc027cbc")
+		)
+		(instances
+			(project "devboard"
+				(path "/761eecd5-cc9b-4512-b74d-b293fa8ee57d"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 222.25 92.71 90)
 		(unit 1)
@@ -12099,7 +12102,7 @@
 				)
 			)
 		)
-		(property "Value" "15pF"
+		(property "Value" "33pF"
 			(at 222.2563 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12109,7 +12112,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 222.25 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -12190,7 +12193,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector:FanPinHeader_1x03_P2.54mm_Vertical"
 			(at 52.07 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -12352,7 +12355,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 233.68 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -12510,7 +12513,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
 			(at 215.9 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -12666,7 +12669,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 252.73 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -12824,7 +12827,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical"
 			(at 38.1 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -12959,7 +12962,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 167.64 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -13039,7 +13042,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 74.93 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -13217,7 +13220,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 114.3 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -13299,7 +13302,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 238.76 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -13406,7 +13409,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 50.8 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -13564,7 +13567,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 			(at 34.29 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -13838,7 +13841,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 50.8 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -13994,7 +13997,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 260.35 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -14309,7 +14312,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 144.78 29.21 0)
 			(hide yes)
 			(show_name no)
